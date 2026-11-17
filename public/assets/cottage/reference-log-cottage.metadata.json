@@ -1,0 +1,99 @@
+{
+  "name": "Reference honey-gold log cottage",
+  "source": "Original Blender modelling from user reference",
+  "coordinate_system": {
+    "blender_up": "Z",
+    "blender_front": "-Y",
+    "gltf_up": "Y",
+    "gltf_front": "+Z",
+    "origin": "center of main body at ground"
+  },
+  "triangles": 110422,
+  "vertices": 223672,
+  "material_primitives": 10,
+  "materials": [
+    "Honey-gold carved timber • vertex-colored PBR",
+    "Wood grain and end rings • vertex-colored PBR",
+    "Hand-laid natural stone • vertex-colored PBR",
+    "Staggered slate shingles • vertex-colored PBR",
+    "Iron and brass details • vertex-colored PBR",
+    "Window glass • vertex-colored PBR",
+    "Flower foliage • vertex-colored PBR",
+    "Pink garden blossoms • vertex-colored PBR",
+    "Deep joinery and soil • vertex-colored PBR",
+    "CottageDoorLeaf • vertex-colored PBR"
+  ],
+  "bounds_blender_xyz": [
+    [
+      -11.175,
+      13.82
+    ],
+    [
+      -10.83,
+      6.005
+    ],
+    [
+      -0.03,
+      15.485
+    ]
+  ],
+  "bounds_gltf_xyz": [
+    [
+      -11.175,
+      13.82
+    ],
+    [
+      -0.03,
+      15.485
+    ],
+    [
+      -6.005,
+      10.83
+    ]
+  ],
+  "door_gltf": [
+    0,
+    1.1,
+    5.35
+  ],
+  "door_leaf_node": "CottageDoorLeaf",
+  "door_hinge_gltf": [
+    -1.05,
+    1.1,
+    5.35
+  ],
+  "porch_gltf": {
+    "deck_y": 1.1,
+    "front_z": 8.4,
+    "steps_front_z": 10.8,
+    "steps": 6
+  },
+  "main_body": {
+    "width": 20,
+    "depth": 10,
+    "foundation_height": 1.1,
+    "eaves": 7.1,
+    "ridge": 12.3
+  },
+  "files": {
+    "game_glb": "dist/assets/cottage/reference-log-cottage.glb",
+    "validation_glb": "models/cottage-source/reference-log-cottage-validation.glb",
+    "blend": "models/cottage-source/reference-log-cottage.blend"
+  },
+  "glb_bytes": 832928,
+  "features": [
+    "Rounded stacked honey-gold logs",
+    "Crossed log ends and concentric growth rings",
+    "Actual window and door openings",
+    "Steep intersecting slate gables",
+    "Central shingled dormer",
+    "Two stone chimneys with open flues and dark hip caps",
+    "Individual beveled staggered slate shingles",
+    "Ashlar stone base",
+    "Mullioned green reflective glazing",
+    "Covered timber porch and six steps",
+    "Flower balcony and pink window boxes",
+    "Lower right hip-roofed wing"
+  ],
+  "license": "Original asset; no downloaded third-party assets or textures"
+}

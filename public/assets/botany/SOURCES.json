@@ -1,0 +1,184 @@
+[
+  {
+    "id": "strawberry-plant",
+    "source": "https://grab3d.com/models/nature/strawberry-plant/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 14564,
+    "originalHeight": 0.21416594088077545,
+    "bytes": 726144,
+    "source_sha256": "51d344c94f9139bbcf0721e11e94c7112954e093918ca7a702bd17be54b84418"
+  },
+  {
+    "id": "berry-bush",
+    "source": "https://grab3d.com/models/nature/berry-bush/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 14742,
+    "originalHeight": 0.8708479404449463,
+    "bytes": 843524,
+    "source_sha256": "353a0a0223e689bfe3c1fd26aaabfa35bfe321e1a13d1a3f915a5c4848aaf994"
+  },
+  {
+    "id": "toadstool-cluster",
+    "source": "https://grab3d.com/models/nature/toadstool-cluster/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 11724,
+    "originalHeight": 0.2502191662788391,
+    "bytes": 582944,
+    "source_sha256": "448a6daef15693458f9c70be68769883ad454636001ed2905a7091a33cfb1f97"
+  },
+  {
+    "id": "forest-mushroom",
+    "source": "https://grab3d.com/models/nature/forest-mushroom/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 6168,
+    "originalHeight": 0.14888297021389008,
+    "bytes": 299420,
+    "source_sha256": "8aca254a0235a129aaebe56d2e64e060e5c6c437cbe9c905c728767fc94193f3"
+  },
+  {
+    "id": "bracket-fungus",
+    "source": "https://grab3d.com/models/nature/bracket-fungus/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 9056,
+    "originalHeight": 0.3440000116825104,
+    "bytes": 593360,
+    "source_sha256": "6969b5f6ade6c0141b5efb3a6bb24030a0b7ac6d4b06d11dbe985940214ec09f"
+  },
+  {
+    "id": "hydrangea",
+    "source": "https://grab3d.com/models/nature/hydrangea/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 19623,
+    "originalHeight": 0.9870456457138062,
+    "bytes": 881412,
+    "source_sha256": "b0034e1e71c8c43a42765612bc41060e5fce0fcb8fffa1d11b02b0fcda428c6b"
+  },
+  {
+    "id": "dandelion",
+    "source": "https://grab3d.com/models/nature/dandelion/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 13540,
+    "originalHeight": 0.2558264136314392,
+    "bytes": 643796,
+    "source_sha256": "c69a0fa652a67995acb4712723867496a192bdb44aaeaa6d01e120f3d32ab9ff"
+  },
+  {
+    "id": "poppy",
+    "source": "https://grab3d.com/models/nature/poppy/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 13820,
+    "originalHeight": 0.6418867707252502,
+    "bytes": 698156,
+    "source_sha256": "779484b4edf84909ab5fc4a65b2c0e62cb7632274b87f6c47d88d1e0d118b998"
+  },
+  {
+    "id": "daisy-patch",
+    "source": "https://grab3d.com/models/nature/daisy-patch/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 11778,
+    "originalHeight": 0.17377780377864838,
+    "bytes": 1110044,
+    "source_sha256": "24229bcd8bd66a1d2c10a6d05acc1fa709200704b5c1768da1583db124ef8c7a"
+  },
+  {
+    "id": "fern",
+    "source": "https://grab3d.com/models/nature/fern/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 11266,
+    "originalHeight": 0.7988040447235107,
+    "bytes": 859736,
+    "source_sha256": "6055baa83a72bde79255a4a9bdd220cf45c718878a06cce8ade32c84bb39a1c2"
+  },
+  {
+    "id": "glowing-mushrooms",
+    "source": "https://grab3d.com/models/nature/glowing-mushrooms/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 11304,
+    "originalHeight": 0.3705214262008667,
+    "bytes": 340596,
+    "source_sha256": "af6238057fae8c4d25a3f8c8e505768a47ba1d1150c4b5889cac46787d802b6a"
+  },
+  {
+    "id": "cosmos",
+    "source": "https://grab3d.com/models/nature/daisy-patch/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 11778,
+    "originalHeight": 0.17377780377864838,
+    "bytes": 1094504,
+    "source_sha256": "24229bcd8bd66a1d2c10a6d05acc1fa709200704b5c1768da1583db124ef8c7a"
+  },
+  {
+    "id": "raspberry",
+    "source": "https://grab3d.com/models/nature/berry-bush/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 71478,
+    "originalHeight": 0.8708479404449463,
+    "bytes": 1020160,
+    "source_sha256": "353a0a0223e689bfe3c1fd26aaabfa35bfe321e1a13d1a3f915a5c4848aaf994"
+  },
+  {
+    "id": "blueberry",
+    "source": "https://grab3d.com/models/nature/berry-bush/",
+    "license": "CC0-1.0 derivative",
+    "triangles": 21150,
+    "originalHeight": 0.8708479404449463,
+    "bytes": 851712,
+    "source_sha256": "353a0a0223e689bfe3c1fd26aaabfa35bfe321e1a13d1a3f915a5c4848aaf994"
+  },
+  {
+    "id": "milkcap",
+    "source": "Project Blender modelling",
+    "license": "Project asset",
+    "triangles": 5760,
+    "originalHeight": 0.6611549854278564,
+    "bytes": 24796
+  },
+  {
+    "id": "violet",
+    "source": "Project Blender modelling",
+    "license": "Project asset",
+    "triangles": 5760,
+    "originalHeight": 0.6611549854278564,
+    "bytes": 23764
+  },
+  {
+    "id": "chanterelle",
+    "source": "Project Blender modelling",
+    "license": "Project asset",
+    "triangles": 5616,
+    "originalHeight": 0.7932000160217285,
+    "bytes": 23476
+  },
+  {
+    "id": "morel",
+    "source": "Project Blender modelling",
+    "license": "Project asset",
+    "triangles": 7904,
+    "originalHeight": 0.9099999666213989,
+    "bytes": 47324
+  },
+  {
+    "id": "oyster",
+    "source": "Project Blender modelling",
+    "license": "Project asset",
+    "triangles": 12280,
+    "originalHeight": 0.6045925617218018,
+    "bytes": 60272
+  },
+  {
+    "id": "inkcap",
+    "source": "Project Blender modelling",
+    "license": "Project asset",
+    "triangles": 6816,
+    "originalHeight": 0.9601378440856934,
+    "bytes": 33448
+  },
+  {
+    "id": "deathcap",
+    "source": "Project Blender modelling",
+    "license": "Project asset",
+    "triangles": 6832,
+    "originalHeight": 0.8199999928474426,
+    "bytes": 29852
+  }
+]

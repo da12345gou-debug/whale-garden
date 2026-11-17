@@ -1,0 +1,646 @@
+[
+  {
+    "id": "milkcap",
+    "model": "enchanted-milkcap",
+    "height": 0.64,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 29976,
+    "bytes": 119436,
+    "modeledDetails": {
+      "curved fibrous stipe": 3,
+      "stem longitudinal fibre": 30,
+      "sculpted continuous cap": 3,
+      "radial lamella under cap": 192
+    }
+  },
+  {
+    "id": "redcap",
+    "model": "enchanted-redcap",
+    "height": 0.7,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 33816,
+    "bytes": 145992,
+    "modeledDetails": {
+      "curved fibrous stipe": 3,
+      "stem longitudinal fibre": 30,
+      "sculpted continuous cap": 3,
+      "radial lamella under cap": 192,
+      "pearl cap freckles": 48
+    }
+  },
+  {
+    "id": "violet",
+    "model": "enchanted-violet",
+    "height": 0.68,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 32874,
+    "bytes": 133692,
+    "modeledDetails": {
+      "curved fibrous stipe": 3,
+      "stem longitudinal fibre": 30,
+      "sculpted continuous cap": 3,
+      "radial lamella under cap": 192,
+      "luminous cap margin": 3
+    }
+  },
+  {
+    "id": "cosmos",
+    "model": "enchanted-cosmos",
+    "height": 0.92,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 33570,
+    "bytes": 136800,
+    "modeledDetails": {
+      "sculpted veined leaf": 8,
+      "leaf midrib": 8,
+      "lateral leaf vein": 80,
+      "branching flower stalk": 3,
+      "thick curled petal": 48,
+      "petal central ridge": 48,
+      "raised receptacle": 3,
+      "fine filament": 105,
+      "individual pollen anther": 105
+    }
+  },
+  {
+    "id": "daisy",
+    "model": "enchanted-daisy",
+    "height": 0.7,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 36066,
+    "bytes": 149688,
+    "modeledDetails": {
+      "sculpted veined leaf": 8,
+      "leaf midrib": 8,
+      "lateral leaf vein": 80,
+      "branching flower stalk": 3,
+      "thick curled petal": 54,
+      "petal central ridge": 54,
+      "raised receptacle": 3,
+      "fine filament": 105,
+      "individual pollen anther": 105
+    }
+  },
+  {
+    "id": "bluebell",
+    "model": "enchanted-bluebell",
+    "height": 1.0,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 26682,
+    "bytes": 110240,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "nodding curved flower stem": 3,
+      "fluted open bell corolla": 9,
+      "hanging pollen filament": 45
+    }
+  },
+  {
+    "id": "ginkgo",
+    "model": "enchanted-ginkgo",
+    "height": 0.66,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 19350,
+    "bytes": 80740,
+    "modeledDetails": {
+      "ginkgo petiole": 9,
+      "bilobed golden fan": 9,
+      "dichotomous fan venation": 162
+    }
+  },
+  {
+    "id": "fern",
+    "model": "enchanted-fern",
+    "height": 0.86,
+    "source": "https://grab3d.com/models/nature/fern/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 14936,
+    "bytes": 2938628,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "faceted dew crystal": 5
+    },
+    "source_sha256": "6055baa83a72bde79255a4a9bdd220cf45c718878a06cce8ade32c84bb39a1c2"
+  },
+  {
+    "id": "mint",
+    "model": "enchanted-mint",
+    "height": 0.82,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 31680,
+    "bytes": 136576,
+    "modeledDetails": {
+      "square mint stem": 4,
+      "sculpted veined leaf": 32,
+      "leaf midrib": 32,
+      "lateral leaf vein": 320,
+      "tiny lilac mint floret": 120
+    }
+  },
+  {
+    "id": "cactusfruit",
+    "model": "enchanted-cactusfruit",
+    "height": 1.15,
+    "source": "https://grab3d.com/models/nature/prickly-pear/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 18422,
+    "bytes": 2376872,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "faceted dew crystal": 5
+    },
+    "source_sha256": "c2d0a4d941daccb9dc7c4f78f0762aace68defcf47300a4d0596f5524ce99434"
+  },
+  {
+    "id": "agave",
+    "model": "enchanted-agave",
+    "height": 0.78,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 26730,
+    "bytes": 116116,
+    "modeledDetails": {
+      "sculpted veined leaf": 27,
+      "leaf midrib": 27,
+      "lateral leaf vein": 270,
+      "ivory marginal agave tooth": 432,
+      "faceted dew crystal": 27
+    }
+  },
+  {
+    "id": "sandrose",
+    "model": "enchanted-sandrose",
+    "height": 1.02,
+    "source": "https://grab3d.com/models/nature/rose/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 18627,
+    "bytes": 3548440,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "faceted dew crystal": 5
+    },
+    "source_sha256": "993183b5386bbbd7eb2dfb35015911efcd4b5b2ffb0630fd4c04789a7526ce2c"
+  },
+  {
+    "id": "sunfruit",
+    "model": "enchanted-sunfruit",
+    "height": 1.02,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 32820,
+    "bytes": 132740,
+    "modeledDetails": {
+      "sculpted veined leaf": 10,
+      "leaf midrib": 10,
+      "lateral leaf vein": 100,
+      "forked fruit bearing branch": 4,
+      "lobed solar glass fruit": 4,
+      "sunfruit gold meridian": 32,
+      "thick curled petal": 28,
+      "petal central ridge": 28
+    }
+  },
+  {
+    "id": "snowlotus",
+    "model": "enchanted-snowlotus",
+    "height": 0.7,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 18882,
+    "bytes": 82648,
+    "modeledDetails": {
+      "sculpted veined leaf": 7,
+      "leaf midrib": 7,
+      "lateral leaf vein": 70,
+      "thick curled petal": 27,
+      "petal central ridge": 27,
+      "fine filament": 40,
+      "individual pollen anther": 40,
+      "faceted dew crystal": 1
+    }
+  },
+  {
+    "id": "iceberry",
+    "model": "enchanted-iceberry",
+    "height": 1.02,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 51572,
+    "bytes": 195964,
+    "modeledDetails": {
+      "sculpted veined leaf": 10,
+      "leaf midrib": 10,
+      "lateral leaf vein": 100,
+      "forked fruit bearing branch": 4,
+      "frosted translucent berry": 16,
+      "thick curled petal": 80,
+      "petal central ridge": 80,
+      "faceted dew crystal": 16
+    }
+  },
+  {
+    "id": "pinecone",
+    "model": "enchanted-pinecone",
+    "height": 0.78,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 53972,
+    "bytes": 215104,
+    "modeledDetails": {
+      "sculpted veined leaf": 6,
+      "leaf midrib": 6,
+      "lateral leaf vein": 60,
+      "woody cone core": 1,
+      "thick curled petal": 115,
+      "petal central ridge": 115,
+      "pine twig": 3,
+      "pine needle": 60
+    }
+  },
+  {
+    "id": "auroramoss",
+    "model": "enchanted-auroramoss",
+    "height": 0.54,
+    "source": "https://grab3d.com/models/nature/moss-patch/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 39714,
+    "bytes": 3245068,
+    "modeledDetails": {
+      "aurora moss sporangium": 36,
+      "faceted dew crystal": 36,
+      "sculpted veined leaf": 72
+    },
+    "source_sha256": "ad2a99bc66db478c5d8b3e31dbac8d6ed3543b36d1250d3373ab9e2adfc75c00"
+  },
+  {
+    "id": "rafflesia",
+    "model": "enchanted-rafflesia",
+    "height": 0.86,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 21770,
+    "bytes": 88408,
+    "modeledDetails": {
+      "sculpted veined leaf": 7,
+      "leaf midrib": 7,
+      "lateral leaf vein": 70,
+      "thick curled petal": 5,
+      "petal central ridge": 5,
+      "ivory raised rafflesia patch": 120,
+      "thick annular diaphragm": 1,
+      "dark central chamber": 1,
+      "central chamber process": 30
+    }
+  },
+  {
+    "id": "glowcap",
+    "model": "enchanted-glowcap",
+    "height": 0.82,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 36714,
+    "bytes": 153308,
+    "modeledDetails": {
+      "curved fibrous stipe": 3,
+      "stem longitudinal fibre": 30,
+      "sculpted continuous cap": 3,
+      "radial lamella under cap": 192,
+      "pearl cap freckles": 48,
+      "luminous cap margin": 3
+    }
+  },
+  {
+    "id": "rainfruit",
+    "model": "enchanted-rainfruit",
+    "height": 1.1,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 44756,
+    "bytes": 173152,
+    "modeledDetails": {
+      "sculpted veined leaf": 10,
+      "leaf midrib": 10,
+      "lateral leaf vein": 100,
+      "forked fruit bearing branch": 4,
+      "orchid pink dragon fruit": 4,
+      "thick curled petal": 80,
+      "petal central ridge": 80,
+      "faceted dew crystal": 4
+    }
+  },
+  {
+    "id": "ghostflower",
+    "model": "enchanted-ghostflower",
+    "height": 0.88,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 11466,
+    "bytes": 49120,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "nodding curved flower stem": 3,
+      "fluted open bell corolla": 3,
+      "hanging pollen filament": 15
+    }
+  },
+  {
+    "id": "starfern",
+    "model": "enchanted-starfern",
+    "height": 0.94,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 54390,
+    "bytes": 192880,
+    "modeledDetails": {
+      "arching fern rachis": 7,
+      "sculpted veined leaf": 140,
+      "faceted dew crystal": 7,
+      "spiral bioluminescent tendril": 7
+    }
+  },
+  {
+    "id": "bellfruit",
+    "model": "enchanted-bellfruit",
+    "height": 1.1,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 23316,
+    "bytes": 99932,
+    "modeledDetails": {
+      "sculpted veined leaf": 10,
+      "leaf midrib": 10,
+      "lateral leaf vein": 100,
+      "forked fruit bearing branch": 4,
+      "arched fruit pedicel": 4,
+      "ribbed lantern fruit husk": 4,
+      "lantern husk raised rib": 20,
+      "faceted dew crystal": 4
+    }
+  },
+  {
+    "id": "hydrangea",
+    "model": "enchanted-hydrangea",
+    "height": 1.16,
+    "source": "https://grab3d.com/models/nature/hydrangea/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 23293,
+    "bytes": 3230472,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "faceted dew crystal": 5
+    },
+    "source_sha256": "b0034e1e71c8c43a42765612bc41060e5fce0fcb8fffa1d11b02b0fcda428c6b"
+  },
+  {
+    "id": "moonlily",
+    "model": "enchanted-moonlily",
+    "height": 0.62,
+    "source": "https://grab3d.com/models/nature/lily-pad/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 23896,
+    "bytes": 2154832,
+    "modeledDetails": {
+      "thick curled petal": 30,
+      "petal central ridge": 30,
+      "fine filament": 40,
+      "individual pollen anther": 40,
+      "faceted dew crystal": 1
+    },
+    "source_sha256": "2cc1350dd0bb6a45ce885b784188336babeb724a141c6e3c711a4af11845aa2f"
+  },
+  {
+    "id": "dandelion",
+    "model": "enchanted-dandelion",
+    "height": 0.88,
+    "source": "https://grab3d.com/models/nature/dandelion/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 17210,
+    "bytes": 2027204,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "faceted dew crystal": 5
+    },
+    "source_sha256": "c69a0fa652a67995acb4712723867496a192bdb44aaeaa6d01e120f3d32ab9ff"
+  },
+  {
+    "id": "sunflower",
+    "model": "enchanted-sunflower",
+    "height": 1.35,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 37316,
+    "bytes": 156648,
+    "modeledDetails": {
+      "sculpted veined leaf": 11,
+      "leaf midrib": 11,
+      "lateral leaf vein": 110,
+      "sunflower curved stem": 1,
+      "thick curled petal": 48,
+      "petal central ridge": 48,
+      "seed disk": 1,
+      "spiral sunflower seed": 180
+    }
+  },
+  {
+    "id": "raspberry",
+    "model": "enchanted-raspberry",
+    "height": 1.18,
+    "source": "https://grab3d.com/models/nature/berry-bush/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 75148,
+    "bytes": 2317224,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "faceted dew crystal": 5
+    },
+    "source_sha256": "f0520afb62b55475f3fffced7f6924bf03db8c7c8a379279c5b4a4e92d0e304d"
+  },
+  {
+    "id": "strawberry",
+    "model": "enchanted-strawberry",
+    "height": 0.68,
+    "source": "https://grab3d.com/models/nature/strawberry-plant/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 63362,
+    "bytes": 2836840,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "faceted dew crystal": 5,
+      "ripe heart shaped strawberry": 4,
+      "individual strawberry achene": 412,
+      "thick curled petal": 28,
+      "petal central ridge": 28,
+      "hanging strawberry pedicel": 4
+    },
+    "source_sha256": "51d344c94f9139bbcf0721e11e94c7112954e093918ca7a702bd17be54b84418"
+  },
+  {
+    "id": "blueberry",
+    "model": "enchanted-blueberry",
+    "height": 1.18,
+    "source": "https://grab3d.com/models/nature/berry-bush/",
+    "license": "CC0-1.0 derivative + project geometry",
+    "triangles": 24820,
+    "bytes": 2147344,
+    "modeledDetails": {
+      "sculpted veined leaf": 5,
+      "leaf midrib": 5,
+      "lateral leaf vein": 50,
+      "faceted dew crystal": 5
+    },
+    "source_sha256": "0c887cacc174035e9fb68274e03e2e924908b852381fc6a731a24e4d7a634f03"
+  },
+  {
+    "id": "porcini",
+    "model": "enchanted-porcini",
+    "height": 0.7,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 19984,
+    "bytes": 86136,
+    "modeledDetails": {
+      "curved fibrous stipe": 2,
+      "stem longitudinal fibre": 20,
+      "sculpted continuous cap": 2,
+      "radial lamella under cap": 128
+    }
+  },
+  {
+    "id": "chanterelle",
+    "model": "enchanted-chanterelle",
+    "height": 0.72,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 19984,
+    "bytes": 82364,
+    "modeledDetails": {
+      "curved fibrous stipe": 2,
+      "stem longitudinal fibre": 20,
+      "sculpted continuous cap": 2,
+      "radial lamella under cap": 128
+    }
+  },
+  {
+    "id": "morel",
+    "model": "enchanted-morel",
+    "height": 0.78,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 9450,
+    "bytes": 40816,
+    "modeledDetails": {
+      "ivory hollow stem": 1,
+      "recessed honeycomb core": 1,
+      "raised honeycomb ridge": 117
+    }
+  },
+  {
+    "id": "oyster",
+    "model": "enchanted-oyster",
+    "height": 0.76,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 21074,
+    "bytes": 89176,
+    "modeledDetails": {
+      "knotted supporting branch": 1,
+      "layered fan shaped cap": 6,
+      "descending fan gill": 180
+    }
+  },
+  {
+    "id": "bracket",
+    "model": "enchanted-bracket",
+    "height": 0.82,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 28382,
+    "bytes": 116768,
+    "modeledDetails": {
+      "knotted supporting branch": 1,
+      "layered fan shaped cap": 6,
+      "descending fan gill": 180,
+      "concentric growth ring": 18
+    }
+  },
+  {
+    "id": "inkcap",
+    "model": "enchanted-inkcap",
+    "height": 0.8,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 25360,
+    "bytes": 103424,
+    "modeledDetails": {
+      "curved fibrous stipe": 2,
+      "stem longitudinal fibre": 20,
+      "sculpted continuous cap": 2,
+      "radial lamella under cap": 128,
+      "inky cap striation": 64,
+      "hanging ink drop": 16
+    }
+  },
+  {
+    "id": "flyagaric",
+    "model": "enchanted-flyagaric",
+    "height": 0.8,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 44368,
+    "bytes": 189192,
+    "modeledDetails": {
+      "curved fibrous stipe": 2,
+      "stem longitudinal fibre": 20,
+      "sculpted continuous cap": 2,
+      "radial lamella under cap": 128,
+      "raised cap wart": 60,
+      "thick curled petal": 40,
+      "petal central ridge": 40,
+      "cup shaped volva": 2
+    }
+  },
+  {
+    "id": "deathcap",
+    "model": "enchanted-deathcap",
+    "height": 0.76,
+    "source": "Project Blender original",
+    "license": "Project original",
+    "triangles": 39568,
+    "bytes": 161128,
+    "modeledDetails": {
+      "curved fibrous stipe": 2,
+      "stem longitudinal fibre": 20,
+      "sculpted continuous cap": 2,
+      "radial lamella under cap": 128,
+      "thick curled petal": 40,
+      "petal central ridge": 40,
+      "cup shaped volva": 2
+    }
+  }
+]
