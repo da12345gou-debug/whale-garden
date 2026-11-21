@@ -1,7 +1,7 @@
 import {biomeWeights,terrainHeight} from './biome-data.js';
 import {gardenTrailCurves} from './garden-trails.js';
 import {trailLateral} from './trails.js';
-import {COTTAGE_ENTRY} from './house-data.js';
+import {COTTAGE_ENTRY,nearCottageEntrance} from './house-data.js';
 export {COTTAGE_ENTRY};
 export function minimapFrame(position,inHome=false){
   const player=inHome?COTTAGE_ENTRY:position,distance=Math.hypot(player.x-COTTAGE_ENTRY.x,player.z-COTTAGE_ENTRY.z);
@@ -32,7 +32,7 @@ export function installHomeMinimap(root,onOpen){
     if(time-lastTime<.1)return;lastTime=time;const frame=minimapFrame(position,inHome);
     if(frame.halfSpan!==lastSpan){draw(frame);lastSpan=frame.halfSpan;}
     const p=frame.project(frame.player.x,frame.player.z);playerMarker.setAttribute('transform',`translate(${p.x.toFixed(2)} ${p.y.toFixed(2)})`);playerMarker.querySelector('path').setAttribute('transform',`rotate(${180-yaw*180/Math.PI})`);
-    distanceLabel.textContent=inHome?'正在家中':frame.distance<3?'已经到家门口':'距家 '+(frame.distance>=1000?(frame.distance/1000).toFixed(1)+' km':Math.round(frame.distance)+' m');
+    distanceLabel.textContent=inHome?'正在家中':nearCottageEntrance(position)?'已经到家门口':'距家 '+(frame.distance>=1000?(frame.distance/1000).toFixed(1)+' km':Math.round(frame.distance)+' m');
     root.dataset.homeDistance=frame.distance.toFixed(1);root.dataset.player=JSON.stringify({x:+frame.player.x.toFixed(2),z:+frame.player.z.toFixed(2)});root.dataset.halfSpan=String(frame.halfSpan);
   }};
 }

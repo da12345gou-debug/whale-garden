@@ -1,8 +1,11 @@
-import {COTTAGE_LANDING} from './house-data.js';
-export const CHARACTER_SPAWN_KEY='whale-garden-character-spawn-v1';
+import {COTTAGE_APPROACH} from './house-data.js';
+// A new placement revision migrates existing sessions once as well as new games.
+export const CHARACTER_SPAWN_KEY='whale-garden-character-spawn-porch-v2';
+export const INITIAL_SPAWN=Object.freeze({...COTTAGE_APPROACH});
+export const INITIAL_CAT=Object.freeze({x:INITIAL_SPAWN.x+1.25,z:INITIAL_SPAWN.z+.65,yaw:0});
+export const INITIAL_CAMERA=Object.freeze({yaw:0,pitch:.40,distance:14});
 export function lifeForCharacter(life,characterId,previousId){
  if(!life||characterId===previousId)return life;
- return {...life,position:{...COTTAGE_LANDING},resume:{scene:'world',position:{...COTTAGE_LANDING},yaw:Math.PI,
-  cat:{x:COTTAGE_LANDING.x+1.5,z:COTTAGE_LANDING.z+1.9,yaw:Math.PI},
-  camera:{yaw:0,pitch:.22,distance:10.5}}};
+ return {...life,position:{...INITIAL_SPAWN},resume:{scene:'world',position:{...INITIAL_SPAWN},yaw:0,
+  cat:{...INITIAL_CAT},camera:{...INITIAL_CAMERA}}};
 }

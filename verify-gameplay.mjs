@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
 import {createPlanarMotor} from './public/character-motion.js';
 import {createCompanionCircle} from './public/companion-circle.js';
-import {lifeForCharacter} from './public/character-spawn.js';
-import {COTTAGE_LANDING} from './public/house-data.js';
-import {isPositionClear,CAT_RADIUS} from './public/navigation.js';
+import {lifeForCharacter,INITIAL_SPAWN,INITIAL_CAT,CHARACTER_SPAWN_KEY} from './public/character-spawn.js';
+import {COTTAGE_DOOR,cottageWalkHeight,cottageColliders,cottageDoorColliders} from './public/house-data.js';
+import {isPositionClear,CAT_RADIUS,GIRL_RADIUS,clearSegment} from './public/navigation.js';
 
 // A first RAF callback can precede initialization. An idle negative delta must
 // never poison the motor, including when the player starts moving afterward.
@@ -25,12 +25,20 @@ assert(motor.update(0,1,2.5,1/60).z>0);
 
 const life={position:{x:200,z:50},counts:[1,2,3],storedCounts:[4,5,6],recipes:['tea'],resume:{scene:'home'}};
 const spawned=lifeForCharacter(life,'new','old');
-assert.deepEqual(spawned.position,COTTAGE_LANDING);
+assert.deepEqual(spawned.position,INITIAL_SPAWN);
 assert.equal(spawned.resume.scene,'world');
 assert.deepEqual(spawned.counts,life.counts);
 assert.deepEqual(spawned.storedCounts,life.storedCounts);
 assert.equal(life.position.x,200);
 assert.equal(lifeForCharacter(life,'new','new'),life);
+assert.notEqual(CHARACTER_SPAWN_KEY,'whale-garden-character-spawn-v1');
+assert.deepEqual(lifeForCharacter(life,'new',null).position,INITIAL_SPAWN);
+assert.equal(lifeForCharacter(null,'new',null),null);
+assert(Math.hypot(INITIAL_SPAWN.x-COTTAGE_DOOR.x,INITIAL_SPAWN.z-COTTAGE_DOOR.z)<1.5,'spawn beside actual door');
+assert.equal(cottageWalkHeight(INITIAL_SPAWN.x,INITIAL_SPAWN.z),1.155,'spawn on porch, not flowers or stairs');
+assert(isPositionClear(INITIAL_SPAWN,[...cottageColliders(),...cottageDoorColliders()],GIRL_RADIUS));
+assert(isPositionClear(INITIAL_CAT,cottageColliders(),CAT_RADIUS));
+assert(clearSegment(INITIAL_SPAWN,{x:-13,z:-6},cottageColliders(),GIRL_RADIUS),'can walk down steps');
 
 const orbit=createCompanionCircle(),girl={x:0,z:0},cat={x:2.45,z:0};
 const args={girl,cat,dt:.1,colliders:[]};
