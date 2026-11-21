@@ -3,6 +3,7 @@ import {mergeGeometries} from './assets/BufferGeometryUtils.js';
 import {terrainHeight,grassCover} from './biome-data.js';
 import {grassAllowed} from './meadow-grass.js';
 import {fantasyBloomGeometry,BLOOM_NAMES} from './fantasy-blooms.js';
+import {INITIAL_SPAWN} from './character-spawn.js';
 
 function rng(seed){return()=>{seed|=0;seed=seed+0x6d2b79f5|0;let t=Math.imul(seed^seed>>>15,1|seed);t^=t+Math.imul(t^t>>>7,61|t);return((t^t>>>14)>>>0)/4294967296;};}
 function tint(g,hex,variation=false){
@@ -69,7 +70,10 @@ export function createFlowerMeadow(scene,{mobile=false,getClearings=()=>[],getCo
       const lx=r()*tileSize,lz=r()*tileSize,x=ox+lx,z=oz+lz,patch=.58+.23*Math.sin(x*.15+Math.sin(z*.10)*2)+.19*Math.sin(z*.17-x*.05),cover=mask[Math.round(lz*2)*33+Math.round(lx*2)];
       if(r()>cover*patch)continue;
       const style=r()<.34?4+Math.floor(r()*6):Math.floor((.5+.5*Math.sin(x*.10+z*.06))*4)%4;
-      groups[style].push({x:lx,y:terrainHeight(x,z),z:lz,s:.65+r()*.80,ry:r()*Math.PI*2,lean:(r()-.5)*.14});
+      // Low flowers at the starting lawn keep the girl, cat and ten-metre
+      // approach to the cottage visible; tall blooms return gradually outside.
+      const startDistance=Math.hypot(x-INITIAL_SPAWN.x,z-INITIAL_SPAWN.z),startScale=.25+.75*T.MathUtils.smoothstep(startDistance,4,9);
+      groups[style].push({x:lx,y:terrainHeight(x,z),z:lz,s:(.65+r()*.80)*startScale,ry:r()*Math.PI*2,lean:(r()-.5)*.14});
     }
     const node=new T.Group();node.position.set(ox,0,oz);let count=0;
     groups.forEach((list,style)=>{

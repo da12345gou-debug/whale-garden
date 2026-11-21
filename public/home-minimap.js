@@ -1,7 +1,7 @@
 import {biomeWeights,terrainHeight} from './biome-data.js';
 import {gardenTrailCurves} from './garden-trails.js';
 import {trailLateral} from './trails.js';
-import {COTTAGE_ENTRY,nearCottageEntrance} from './house-data.js';
+import {COTTAGE_DOOR as COTTAGE_ENTRY,nearCottageEntrance} from './house-data.js';
 export {COTTAGE_ENTRY};
 export function minimapFrame(position,inHome=false){
   const player=inHome?COTTAGE_ENTRY:position,distance=Math.hypot(player.x-COTTAGE_ENTRY.x,player.z-COTTAGE_ENTRY.z);
