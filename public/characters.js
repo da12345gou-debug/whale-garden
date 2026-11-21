@@ -2,6 +2,7 @@ import * as T from './assets/three.module.js';
 import {GLTFLoader} from './assets/GLTFLoader.js';
 import {DRACOLoader} from './assets/DRACOLoader.js';
 import {createCharacterMotion} from './character-motion.js';
+import {activeGirl} from './character-catalog.js';
 
 const yawAxis=new T.Vector3(0,1,0),pitchAxis=new T.Vector3(1,0,0),rollAxis=new T.Vector3(0,0,1),offset=new T.Quaternion();
 let characterEnvironment;
@@ -21,7 +22,7 @@ export function reflectionLight(){
   return characterEnvironment;
 }
 
-export function prepareCharacter(gltf,name,targetHeight,{environment=true}={}){
+export function prepareCharacter(gltf,name,targetHeight,{environment=true,kind=name==='白猫'?'cat':'girl',source=kind==='cat'?'猫.fbx':'女孩.fbx',characterId=kind}={}){
   const root=new T.Group(),visual=gltf.scene;
   root.name=name;
   root.add(visual);
@@ -47,14 +48,15 @@ export function prepareCharacter(gltf,name,targetHeight,{environment=true}={}){
     action.setEffectiveWeight(0);
     return[clip.name,action];
   }));
-  const girl=name==='白发女孩';
+  const girl=kind==='girl';
   const joints={head:visual.getObjectByName(girl?'Girl_Head':'Cat_Head'),torso:visual.getObjectByName(girl?'Girl_Spine':'Cat_Spine'),tail:girl?null:visual.getObjectByName('Cat_Tail')};
   const rest=Object.fromEntries(Object.entries(joints).filter(([,joint])=>joint).map(([key,joint])=>[key,joint.quaternion.clone()]));
-  const poseNodes=[];visual.traverse(o=>{if(o.isBone||o.name.endsWith('_provided_rig'))poseNodes.push(o);});
-  let skin;visual.traverse(o=>{if(o.isSkinnedMesh&&(!skin||o.geometry.attributes.position.count>skin.geometry.attributes.position.count))skin=o;});
+  const poseNodes=[];visual.traverse(o=>{if(o.isBone||o.name.endsWith('_rig'))poseNodes.push(o);});
+  let skin;const skins=[];visual.traverse(o=>{if(o.isSkinnedMesh){skins.push(o);if(!skin||o.geometry.attributes.position.count>skin.geometry.attributes.position.count)skin=o;}});
   const soles=[];if(skin){const p=skin.geometry.attributes.position;for(let i=0;i<p.count;i++)if(p.getY(i)<.026)soles.push(i);}
   const groundSamples=soles.filter((_,i)=>i%Math.max(1,Math.floor(soles.length/160))===0);
-  root.userData={blender:true,source:girl?'女孩.fbx':'猫.fbx',visual,mixer,actions,joints,rest,weight:0,runWeight:0,motion:createCharacterMotion(girl?'girl':'cat'),poseNodes,targetNodes:poseNodes.map(o=>poseTarget.getObjectByName(o.name)),previousPose:poseNodes.map(o=>o.quaternion.clone()),transition:null,transitionAge:1,wantsMove:false,skin,groundSamples,baseVisualY:visual.position.y,groundPoint:new T.Vector3()};
+  const groundSets=skins.map(mesh=>{const p=mesh.geometry.attributes.position,indices=[];for(let i=0;i<p.count;i++)if(p.getY(i)<.026)indices.push(i);return{mesh,indices:indices.filter((_,i)=>i%Math.max(1,Math.floor(indices.length/160))===0)};}).filter(s=>s.indices.length);
+  root.userData={blender:true,source,characterId,visual,mixer,actions,joints,rest,weight:0,runWeight:0,motion:createCharacterMotion(girl?'girl':'cat',characterId==='redhood-20261121'?{stride:.84*(3.08/1.78)}:{}),poseNodes,targetNodes:poseNodes.map(o=>poseTarget.getObjectByName(o.name)),previousPose:poseNodes.map(o=>o.quaternion.clone()),transition:null,transitionAge:1,wantsMove:false,skin,groundSamples,groundSets,baseVisualY:visual.position.y,groundPoint:new T.Vector3()};
   return root;
 }
 
@@ -63,11 +65,11 @@ export async function loadCharacters(){
   const loader=new GLTFLoader().setDRACOLoader(draco);
   try{
     const [girl,cat]=await Promise.all([
-      loader.loadAsync('./assets/characters/girl-provided.glb'),
+      loader.loadAsync(activeGirl.url),
       loader.loadAsync('./assets/characters/cat-provided.glb')
     ]);
     if([girl,cat].some(g=>!['Idle','Walk'].every(name=>g.animations.some(clip=>clip.name===name))))throw new Error('Character motion library is incomplete.');
-    return{girl:prepareCharacter(girl,'白发女孩',3.08),cat:prepareCharacter(cat,'白猫',1.38)};
+    return{girl:prepareCharacter(girl,activeGirl.name,3.08,{kind:'girl',source:activeGirl.source,characterId:activeGirl.id}),cat:prepareCharacter(cat,'白猫',1.38)};
   }finally{draco.dispose();}
 }
 
@@ -97,9 +99,9 @@ function step(root,speed,dt,responsiveness,running){
   });
   // Rotation blending may dip a sole between two valid planted poses. Check a
   // small sole sample after skinning and keep the blended feet above the floor.
-  if(d.skin&&d.groundSamples.length){
-    root.updateMatrixWorld(true);d.skin.skeleton.update();let low=Infinity;
-    for(const i of d.groundSamples){const p=d.groundPoint.fromBufferAttribute(d.skin.geometry.attributes.position,i);d.skin.applyBoneTransform(i,p);p.applyMatrix4(d.skin.matrixWorld);low=Math.min(low,p.y-root.position.y);}
+  if(d.groundSets.length){
+    root.updateMatrixWorld(true);let low=Infinity;
+    for(const {mesh,indices} of d.groundSets){mesh.skeleton.update();for(const i of indices){const p=d.groundPoint.fromBufferAttribute(mesh.geometry.attributes.position,i);mesh.applyBoneTransform(i,p);p.applyMatrix4(mesh.matrixWorld);low=Math.min(low,p.y-root.position.y);}}
     if(low<0)d.visual.position.y+=Math.min(.18,-low);
   }
   return d;

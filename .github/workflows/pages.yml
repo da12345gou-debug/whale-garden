@@ -20,7 +20,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Verify website
-        run: node verify-pages.mjs
+        run: |
+          node verify-gameplay.mjs
+          node verify-pages.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload website

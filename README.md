@@ -4,6 +4,9 @@
 
 此仓库保存可直接发布的网页版，包含百倍巨鲸、四种地貌、植物采集和小屋室内场景。
 
+默认角色已更新为红兜帽女孩。旧女孩资源保留并隐藏，暂不提供角色选择界面。白猫与原有玩法保持可用。
+首次进入从小屋门口出发；已有采集和储藏保留。女孩停下后，白猫会慢慢绕着她散步，并避开障碍。
+
 ## 游玩
 
 使用支持 WebGL 的电脑浏览器。首次打开需要加载模型；无需安装桌面程序。
@@ -29,7 +32,7 @@ GitHub 仓库的 Settings → Pages 中选择 GitHub Actions 作为发布来源�
 推送到 main 后，`.github/workflows/pages.yml` 会校验并发布网站。
 最终游玩地址以 GitHub Pages 实际部署返回的 URL 为准。
 
-本地校验：`node verify-pages.mjs`（Node.js 20 或以上）。
+本地校验：`node verify-gameplay.mjs` 和 `node verify-pages.mjs`（Node.js 20 或以上）。
 本地预览可使用任意静态 HTTP 服务器提供 `public/`；不要直接以 file:// 打开 HTML。
 
 ## 组件说明
